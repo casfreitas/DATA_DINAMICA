@@ -1,0 +1,189 @@
+<link href="css.css" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- 
+Each calendar widget can have a minimal date that the user can select. Specify this with a data-min. The accepted value are:
+1. "today": It means the minimum date the user can select is today's date.
+2. "link": It means the minimum date the user can select is the date in the linked calendar widget (please specify the id of the linked calendar widget with data-link)
+3. A date string: The accepted format is "dd-mm-yyyy"; -->
+
+<div class="inputs">
+  <div class="type1">
+    <div class="fields">
+      <div id="id_startCalendar" class="calendar-widget default-today" data-next="#id_deadlineCalendar" date-min="today" tabindex="-1">
+        <div class="input-wrapper">
+          <label for="type1-start">Starting Date</label>
+          <input class="date-field" id="type1-start" type="text" placeholder="Starting Date" readonly>
+        </div>
+        <div class="calendar-wrapper">
+          <div class="dual-calendar">
+            <div class="calendar">
+              <div class="calendar-header">
+                <div class="prev-btn">
+                  <i class="material-icons">keyboard_arrow_left</i>
+                </div>
+
+                <div class="month-text">
+                  <p>September 2018</p>
+                </div>
+              </div>
+              <div class="calendar-body">
+                <div class="date-table">
+                  <div class="date-table-header">
+                    <div class="day sunday">S</div>
+                    <div class="day">M</div>
+                    <div class="day">T</div>
+                    <div class="day">W</div>
+                    <div class="day">T</div>
+                    <div class="day">F</div>
+                    <div class="day saturday">S</div>
+                  </div>
+                  <div class="date-table-body">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calendar plus-one">
+              <div class="calendar-header">
+                <div class="month-text">
+                  <p>September</p>
+                </div>
+
+                <div class="next-btn">
+                  <i class="material-icons">keyboard_arrow_right</i>
+                </div>
+              </div>
+              <div class="calendar-body">
+                <div class="date-table">
+                  <div class="date-table-header">
+                    <div class="day sunday">S</div>
+                    <div class="day">M</div>
+                    <div class="day">T</div>
+                    <div class="day">W</div>
+                    <div class="day">T</div>
+                    <div class="day">F</div>
+                    <div class="day saturday">S</div>
+                  </div>
+                  <div class="date-table-body">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="id_deadlineCalendar" class="calendar-widget linked" tabindex="-1" data-link="#id_startCalendar" date-min="link">
+        <div class="input-wrapper">
+          <label for="type1-deadline">Deadline</label>
+          <input class="date-field" id="type1-deadline" type="text" placeholder="Deadline" readonly>
+        </div>
+        <div class="calendar-wrapper">
+          <div class="dual-calendar">
+            <div class="calendar">
+              <div class="calendar-header">
+                <div class="prev-btn">
+                  <i class="material-icons">keyboard_arrow_left</i>
+                </div>
+
+                <div class="month-text">
+                  <p>September 2018</p>
+                </div>
+              </div>
+              <div class="calendar-body">
+                <div class="date-table">
+                  <div class="date-table-header">
+                    <div class="day sunday">S</div>
+                    <div class="day">M</div>
+                    <div class="day">T</div>
+                    <div class="day">W</div>
+                    <div class="day">T</div>
+                    <div class="day">F</div>
+                    <div class="day saturday">S</div>
+                  </div>
+                  <div class="date-table-body">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calendar plus-one">
+              <div class="calendar-header">
+                <div class="month-text">
+                  <p>September</p>
+                </div>
+
+                <div class="next-btn">
+                  <i class="material-icons">keyboard_arrow_right</i>
+                </div>
+              </div>
+              <div class="calendar-body">
+                <div class="date-table">
+                  <div class="date-table-header">
+                    <div class="day sunday">S</div>
+                    <div class="day">M</div>
+                    <div class="day">T</div>
+                    <div class="day">W</div>
+                    <div class="day">T</div>
+                    <div class="day">F</div>
+                    <div class="day saturday">S</div>
+                  </div>
+                  <div class="date-table-body">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="type2">
+    <div class="calendar-widget" tabindex="-1">
+      <div class="input-wrapper">
+        <label>Single Calendar Widget</label>
+        <input class="date-field" type="text" placeholder="Select a date" readonly>
+      </div>
+      <div class="calendar-wrapper">
+        <div class="dual-calendar">
+          <div class="calendar">
+            <div class="calendar-header">
+              <div class="prev-btn">
+                <i class="material-icons">keyboard_arrow_left</i>
+              </div>
+
+              <div class="month-text">
+                <p>September 2018</p>
+              </div>
+
+              <div class="next-btn">
+                <i class="material-icons">keyboard_arrow_right</i>
+              </div>
+            </div>
+            <div class="calendar-body">
+              <div class="date-table">
+                <div class="date-table-header">
+                  <div class="day sunday">S</div>
+                  <div class="day">M</div>
+                  <div class="day">T</div>
+                  <div class="day">W</div>
+                  <div class="day">T</div>
+                  <div class="day">F</div>
+                  <div class="day saturday">S</div>
+                </div>
+                <div class="date-table-body">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
